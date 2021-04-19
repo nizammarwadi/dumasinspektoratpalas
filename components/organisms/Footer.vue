@@ -140,4 +140,3 @@ export default {
     }
 </style>
 
-                        <p>E-Dumas Inspektorat Palas adalah proses penyampaian informasi yang berisi keluhan dan ketidakpuasan yang disampaikan oleh masyarakat kepada pemerintah Kabupaten Padang Lawas melalui Inspektorat
