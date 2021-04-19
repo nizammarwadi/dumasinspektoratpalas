@@ -9,7 +9,7 @@
     <Flow/>
     <Team/>/
     <Registrasi/>
-    <Footer/>
+    <!-- <Footer/> -->
   </div>
 </template>
 
@@ -21,9 +21,9 @@ import Panel from "~/components/organisms/Panel"
 import About from "~/components/organisms/About"
 import Principle from "~/components/organisms/Principle"
 import Flow from "~/components/organisms/Flow"
-import Registrasi from "~/components/organisms/Registrasi"
 import Team from "~/components/organisms/Team"
-import Footer from "~/components/organisms/Footer"
+import Registrasi from "~/components/organisms/Registrasi"
+// import Footer from "~/components/organisms/Footer"
 export default {
   components: {
     Navbar: Navbar,
@@ -35,7 +35,7 @@ export default {
     Flow: Flow,
     Registrasi: Registrasi,
     Team: Team,
-    Footer: Footer,
+    // Footer: Footer,
   }
 }
 </script>
