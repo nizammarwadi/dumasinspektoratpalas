@@ -2,24 +2,40 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Elektronik <span>Pengaduan</span> Masyarakat Inspektorat  <span>Padang Lawas</span></h1>
-            <p><a class="btn btn-primary btn-lg mt-4" href="#" role="button">LAPOR SEKARANG</a></p>
+            <p><button class="btn btn-primary btn-lg mt-4" @click="toRegistrasiSection">LAPOR SEKARANG</button></p>
         </div>
     </div>
 </template>
 
 <script>
+// import Button from '~/components/atoms/Button.vue'
 export default {
-
-}
+    data() {
+        return {
+            registrasiSection: "",
+        }
+    },
+    mounted() {
+        this.registrasiSection = document.getElementById('registrasi')
+    },
+    methods: {
+        toRegistrasiSection() {
+            this.registrasiSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest"
+            })}
+        }
+    }
 </script>
 
 <style>
     .jumbotron{
         background-image: url(~/assets/images/1.jpg);
-        /* background-size: bottom; */
-        background-size: cover;
-        /* background-position:  ; */
-        height: 38rem;
+        /* background-size: contain; */
+        background-size: 100% 100%;
+        background-position-y: 30px;
+        height: 40rem;
         margin-top: 0px;
         position: relative;
     

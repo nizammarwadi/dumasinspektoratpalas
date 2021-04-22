@@ -1,7 +1,7 @@
 <template>
-    <section class="flowusers">
+    <section id="flowusers" class="flowusers">
         <div class="flowusers-title">
-            <h2>Alur Pelayanan Lapor</h2>
+            <h2>ALUR PELAYANAN E-DUMAS</h2>
         </div>
         <div class="flowusers-image">
             <div class="daptar" style="width: 130px; ">
@@ -49,12 +49,13 @@ export default {
         padding: 30px 0px 60px;
         color: white;
         
+        
     }
     .flowusers-title h2{
         text-align: center;
         font-size: 32px;
         font-weight: 700;
-        width: 453px; 
+        width: 480px; 
         margin: 0px auto;
         padding: 20px 10px;   
     }

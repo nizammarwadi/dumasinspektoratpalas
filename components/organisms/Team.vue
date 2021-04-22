@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
+    <div id="team" class="container">
         <div class="text-center">
-            <h2>STRUKTUR INSPEKTORAT PALAS</h2>
+            <h2 class="title-struktur">STRUKTUR INSPEKTORAT PALAS</h2>
         </div>
         <div class="row line1">
             <div class="col">
@@ -11,7 +11,7 @@
                 
             </div>
             <div class="col">
-                <img src="~/assets/images/Mukhlis Arif Harahap, M.Si (Sekretaris).jpeg" style="width: 270px; height: 340px;" alt="">
+                <img src="~/assets/images/Mukhlis Arif Harahap, M.Si (Sekretaris).jpeg" style="width: 260px; height: 340px;" alt="">
                 <h6> Mukhlis Arif Harahap, M.Si</h6>
                 <p>SEKRETARIS</p>
 
@@ -64,6 +64,15 @@ export default {
     font-weight: 700;
     margin-bottom: 80px;
 }
+.container .title-struktur::after {
+    content: '';
+    display: block;
+    border: 2px;
+    width: 350px;
+    background-color: #f56607;
+    height: 2px;
+    margin: 15px auto 30px;
+}
  .row {
      text-align: center;
  }
@@ -72,6 +81,7 @@ export default {
  }
  .col img {
      object-fit: cover;
+     border-radius: 15px;
  }
  .col h6 {
      margin-top: 20px;

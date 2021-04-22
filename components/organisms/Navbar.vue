@@ -14,38 +14,28 @@
                 <li class="nav-item active">
                     <a class="nav-link js-scroll-trigger" href="#">BERANDA <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link js-scroll-trigger text-white" @click="toProfilSection">PROFIL</a>
-                </li>
-                    <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger text-white" @click="toStrukturSection">TENTANG KAMI</a>
-                </li>
-                <!-- <li class="nav-item dropdown ">
+                </li> -->
+                <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PROGRAM
+                        PROFIL
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" @click="toProgramSection">Visi dan Misi</a>
+                        <a class="dropdown-item" @click="toProfilSection">TENTANG KAMI </a>
                     <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">RPJM DESA</a>
-                    <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">RPJP DESA</a>
+                        <a class="dropdown-item" @click="toTeamSection">STRUKTUR</a>
                     </div>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger text-white" href="#keuangan">HUBUNGI KAMI</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger text-white" href="#suratonline">SURAT ONLINE</a>
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger text-white" @click="toFlowusersSection">PROSES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger text-white" href="#keuangan">BERITA</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger text-white" @click="toFooterSection">HUBUNGI KAMI</a>
-                </li> -->
-                <!-- <li class="nav-item">
-                        <ButtonElement
-                        titleBtn="LOGIN"
-                    />
-                </li> -->
+                </li>
             </ul>
         </div>
     </nav>
@@ -62,17 +52,17 @@ export default {
         return {
             berandaSection: "",
             profilSection: "",
-            strukturSection: "",
-            programSection: "",
-            footer: "",
+            flowusersSection: "",
+            teamSection: "",
+            footerSection: "",
         }
     },
     mounted() {
-        this.berandaSection = document.getElementById("slider")
-        this.profilSection = document.getElementById("profil")
-        this.strukturSection = document.getElementById("struktur")
-        this.programSection = document.getElementById("program")
-        this.footer = document.getElementById("footer")
+        this.berandaSection = document.getElementById("navbar")
+        this.profilSection = document.getElementById("about")
+        this.flowusersSection = document.getElementById("flowusers")
+        this.teamSection = document.getElementById("team")
+        this.footerSection = document.getElementById("footer")
     },
     methods: {
         hideMenu() {
@@ -95,16 +85,16 @@ export default {
             })
             this.hideMenu()
         },
-        toStrukturSection() {
-            this.strukturSection.scrollIntoView({
+        toFlowusersSection() {
+            this.flowusersSection.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
                 inline: "nearest",
             })
             this.hideMenu()
         },
-        toProgramSection() {
-            this.programSection.scrollIntoView({
+        toTeamSection() {
+            this.teamSection.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
                 inline: "nearest",
@@ -112,7 +102,7 @@ export default {
             this.hideMenu()
         },
         toFooterSection() {
-            this.footer.scrollIntoView({
+            this.footerSection.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
                 inline: "nearest",
@@ -124,8 +114,19 @@ export default {
 </script>
 
 <style>
+    .dropdown-menu.show {
+        background-color: #007bff;
+        border: none;
+        margin-left: 70px;
+        border-bottom-right-radius: 25px;
+        color: white;
+    }
+    a .dropdown-item:hover{
+        background-color: black;
+    }
     .navbar {
-        background-color: rgb(104, 157, 213);
+        /* background-color: rgb(104, 157, 213); */
+        background-color: #007bff;
         /* background-color: yellow; */
         /* background-color: transparent; */
         font-weight: 650;
@@ -133,6 +134,7 @@ export default {
     }
     .navbar-nav {
         cursor: pointer;
+        font-size: 15px;
     }
     .palas {
         object-fit: contain;

@@ -1,6 +1,6 @@
 <template>
    <div class="container">
-       <button class="button" @click.prevent="$emit ('click-button')">{{titleButton}}</button>
+       <button class="button btn btn-primary" @click.prevent="$emit ('click-button')">{{titleButton}}</button>
    </div>
 </template>
 

@@ -1,32 +1,36 @@
 <template>
     <footer>
         <section id="footer" class="footer">
-            <div class="about-us-title">
-                <h5>E-DUMAS INSPEKTORAT PALAS</h5>
+            <div class="title">
+                <div>
+                    <h5>E-DUMAS INSPEKTORAT PALAS</h5>
+                </div>
+                <p>E-Dumas Inspektorat Palas adalah Proses Penyampaian Informasi yang berisi keluhan dan ketidakpuasan 
+                    yang disampaikan oleh masyarakat kepada pemerintah Kabupaten Padang Lawas mealui Inspektorat
+                </p>
             </div>
-            <p>E-Dumas Inspektorat Palas adalah Proses Penyampaian Informasi yang berisi keluhan dan ketidakpuasan 
-                yang disampaikan oleh masyarakat kepada pemerintah Kabupaten Padang Lawas mealui Inspektorat
-            </p>
-            
-                        <div class="contact-us-mediasosial">
-                            <h5>Media Sosial</h5>
-                            <a href="https://www.instagram.com/bimbinganbareng/"><img class="ig" src="~/assets/images/ig.png" alt="not found"></a>
-                            <a href="#"><img class="fb" src="~/assets/images/fb.png" alt="not found"></a>
-                        </div>
-                        <div class="contact-us-address">
-                            <h5>Alamat</h5>
-                            <p>Jl. Lintas Sibuhuan - Riau Km. 3 Sibuhuan  <br>Kabupaten Padang Lawas Provinsi Sumatera Utara</p>
-                        </div>
-                        <div class="contact-us-call">
-                            <h5>Hubungi Kami</h5>
-                            <div class="call-number">
-                                <a href="https://wa.me/6282362574353?text=Selamat%20datang%20di%20Bimbinganbareng.id.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank"><img src="~/assets/images/call.png" alt="not found"></a>
-                                <p><a href="https://wa.me/6282362574353?text=Selamat%20datang%20di%20Bimbinganbareng.id.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank">0823-6257-4353</a></p>
-                            </div>
-                        </div>
+
+            <div class="contact">
+                <div class="contact-us-mediasosial">
+                    <h5>Media Sosial</h5>
+                    <a href="https://www.instagram.com/bimbinganbareng/"><img class="ig" src="~/assets/images/ig.png" alt="not found"></a>
+                    <a href="#"><img class="fb" src="~/assets/images/fb.png" alt="not found"></a>
+                </div>
+                <div class="contact-us-address">
+                    <h5>Alamat</h5>
+                    <p>Jl. Lintas Sibuhuan - Riau Km. 3 Sibuhuan  <br>Kabupaten Padang Lawas Provinsi Sumatera Utara</p>
+                </div>
+                <div class="contact-us-call">
+                    <h5>Hubungi Kami</h5>
+                    <div class="call-number">
+                        <a href="https://wa.me/6282362574353?text=Selamat%20datang%20di%20Bimbinganbareng.id.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank"><img src="~/assets/images/call.png" alt="not found"></a>
+                        <p><a href="https://wa.me/6282362574353?text=Selamat%20datang%20di%20Bimbinganbareng.id.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank">0823-6257-4353</a></p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="patent">
-            <p>©Copyright 2021 Dumasinspektoratpalas.go.id</p>
+            <p>©Copyright 2021 dumasinspektoratpalas.go.id</p>
         </section>
     </footer>
     
@@ -39,25 +43,41 @@ export default {
 </script>
 
 <style>
-    .about-us {
-        font-size: 18px;
-        max-width: 400px;
+    .footer {
+        color: white;
+        background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4));
+        padding: 70px 0px;
+        display: flex;
+        justify-content: space-around;
     }
-    .contact-us{
-        text-align: left;
+    .title h5 {
+        font-weight: 700;
+        font-size: 25px;
     }
-    .about-us-title h5 {
-        font-size: 20px;
+    .title p {
+        width: 500px;
+        font-size: 16px;
+    }
+    .contact h5 {
         font-weight: 700;
     }
-    .contact-us-address p{
-        font-size: 16px;
+    .contact p {
+        font-weight: 700;
     }
-    .about-us p{
-        font-size: 16px;
+    .contact-us-address {
+        margin-top: 30px;
     }
-    .contact-us-mediasosial h5 {
-        font-weight: bold;
+    .contact-us-call {
+        margin-top: 30px;
+    }
+    .call-number {
+        display: flex;
+        align-items: center;
+        /* margin-bottom: 40px; */
+    }
+    .call-number p {
+        margin-left: 20px;
+        margin-top: 20px;
     }
     .ig {
         object-fit: cover;
@@ -65,63 +85,17 @@ export default {
     .fb {
         object-fit: contain;
     }
-    .contact-us-address h5{
-        margin-top: 20px;
-        font-weight: bold;
-    }
-    .contact-us-call h5 {
-        font-weight: bold;
-        margin-top: 20px;
-    }
-    .call-number img {
-        margin-right: 20px;
-        object-fit: cover;
-    }
-    .call-number {
-        font-weight: 700;
-        margin-top: 15px;
-        display: flex;
-        justify-content: left;
-        align-items: flex-end;
-    }
-   
-    
-    /* .about-us .about-us-title h4::after {
-        content: '_____';
-        display: block;
-        color: #4abeed;
-        font-size: 30px;
-        margin: -10px 0px 15px 0px;
-    }
-    .contact-us .contact-us-title h4::after{
-        content: '_____';
-        display: block;
-        color: #4abeed;
-        font-size: 30px;
-        margin: -10px 0px 15px 0px;
-    }
-    .email-us .email-us-title h4::after{
-        content: '_____';
-        display: block;
-        color: #4abeed;
-        font-size: 30px;
-        margin: -10px 0px 15px 0px;
-    } */
-    /* .phone{
-        list-style-type: none;
-        
-    } */
     .patent{
         /* border-top: 1px solid #bbb; */
-        background-color:#E2E2E2;
-        text-align: left;
+        background-color:#100f0f;
+        text-align: center;
     }
     .patent p{
         font-size: 16px;
+        color: white;
         font-weight: 700;
         padding: 15px;
-        margin-left: 100px;
-        color: #0B090A;
+        /* color: #0B090A; */
         margin-bottom: 0px;
     }
     @media(max-width: 578px) {

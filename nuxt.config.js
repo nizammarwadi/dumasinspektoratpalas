@@ -17,7 +17,11 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' },
       { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
-      { rel: "stylesheet", type: "text/css", href:"https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap"}
+      { rel: "stylesheet", type: "text/css", href:"https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap"},
+      { rel: 'apple-touch-icon', sizes:'180x180', href: '/apple-touch-icon.png'},
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href:'/favicon-32x32.png'},
+      { rel: 'icon', type: 'image/png', sizes:'16x16', href:'/favicon-16x16.png'},
+      { rel: 'manifest', href: '/site.webmanifest'},
     ],
     script: [
       { src: 'https://code.jquery.com/jquery-3.5.1.slim.min.js' },

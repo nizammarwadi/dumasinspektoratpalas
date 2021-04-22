@@ -1,5 +1,5 @@
 <template>
-    <section class="about">
+    <section id="about" class="about">
         <h3>ABOUT SHORTLY US</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, dolor harum nulla debitis dolore quos sequi laboriosam beatae, quisquam aperiam magnam nostrum quasi eveniet dignissimos? Quas, odit tempora. Repudiandae, sunt.</p>
         <div class="content">
@@ -16,7 +16,9 @@ export default {
 
 <style>
     .about {
-        margin: 150px 0px;
+        margin-top: 50px;
+        padding-top: 80px;
+        padding-bottom: 90px;
     }
     .about h3 {
         text-align: center;
