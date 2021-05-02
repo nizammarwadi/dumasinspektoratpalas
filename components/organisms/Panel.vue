@@ -4,19 +4,23 @@
             <div class="col-lg-8 info-panel">
                 <div class="row">
                     <div class="col-lg">
-                        <img src="~/assets/images/instagram.png" alt="isi form">
+                        <a href="https://www.instagram.com/humasinspektoratpalas/">
+                        <img src="~/assets/images/instagram.png" alt="instagram"></a>
                         <p>Instagram</p>
                     </div>
                     <div class="col-lg">
-                        <img src="~/assets/images/facebook.png" alt="isi form">
+                        <a href="https://web.facebook.com/humasinspektoratpalas.humasinspektoratpalas/">
+                        <img src="~/assets/images/facebook.png" alt="facebook"></a>
                         <p>Facebook</p>
                     </div>
                     <div class="col-lg">
-                        <img src="~/assets/images/whatsapp.png" alt="isi form">
+                        <a href="https://wa.wizard.id/4a2aed" target="_blank">
+                        <img src="~/assets/images/whatsapp.png" alt="whatsapp"></a>
                         <p>Whatsapp</p>
                     </div>
                      <div class="col-lg">
-                        <img src="~/assets/images/telegram.png" alt="isi form">
+                        <a href="https://t.me/Humasinspektoratpalas" target="_blank">
+                        <img src="~/assets/images/telegram.png" alt="telegram"></a>
                         <p>Telegram</p>
                     </div>
                 </div>
@@ -45,6 +49,17 @@ export default {
     }
     .row {
         padding: 0px 30px;
+    }
+    @media (max-width:792px) {
+        .info-panel {
+            margin-top: -60px;
+        }
+        .row p {
+            display: none;
+        }
+        .col-lg {
+            padding: 15px 0px 15px 0px;
+        }
     }
     
 </style>

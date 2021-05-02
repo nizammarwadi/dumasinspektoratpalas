@@ -7,7 +7,7 @@
     <About/>
     <Principle/>
     <Flow/>
-    <Team/>/
+    <!-- <Team/>/ -->
     <Registrasi/>
     <Footer/>
   </div>

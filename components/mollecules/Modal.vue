@@ -4,7 +4,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Data berhasil di kirim<span style="font-size:15px;"><br>Terima telah ikut berpartisipasi dalam memberantas korupsi</span></h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Terima kasih, pengaduan anda akan segera kami verifikasi</h5>
                     <button type="button" @click ="$emit('click-reset')" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>

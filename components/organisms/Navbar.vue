@@ -24,7 +24,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" @click="toProfilSection">TENTANG KAMI </a>
                     <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" @click="toTeamSection">STRUKTUR</a>
+                        <a class="dropdown-item" href="/struktur-inspektorat" target="_blank">STRUKTUR</a>
                     </div>
                 </li>
                     <li class="nav-item">
@@ -150,11 +150,17 @@ export default {
         .logo {
             font-size: 13px;
         }
-       .navbar-nav {
+       .navbar {
            margin-right: 0px;
+           padding: 0px 20px;
        }
        .palas {
            margin-left: 0px;
        }
     }
+     @media (max-width: 400px) {
+         .navbar {
+             padding: 0px 5px;
+         }
+     }
 </style>

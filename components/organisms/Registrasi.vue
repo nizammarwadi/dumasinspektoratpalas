@@ -2,12 +2,12 @@
     <section id="registrasi" class="registrasi">
         <div class="container">
             <div class="registration-content">
-                <div class="col-md-4">
+                <div class="form-reg">
                     <h2 class="title">Form Pengaduan</h2>
                     <form>
                         <div class="form-group">
                             <label class="title-name" for="name">Nama</label>
-                            <input v-model="name" @keypress="checkValue('name')" type="text" class="form-control" id="name" placeholder="Contoh: Ucok Bala Harahap">
+                            <input v-model="name" @keypress="checkValue('name')" type="text" class="form-control" id="name" placeholder="Contoh: Ucok Bala">
                             <small id="error-name" class="form-text text-muted" style="color: red !important" v-if="errorName">{{ errorName }}</small>
 
                         </div>
@@ -29,20 +29,21 @@
                             <small id="error-laporan" class="form-text text-muted" style="color: red !important" v-if="errorTitleLaporan">{{errorTitleLaporan}}</small>
                         </div>
                         <div class="form-group">
-                            <label for="project">Jenis Laporan</label>
-                            <input v-model="project" @keypress="checkValue('project')" type="text" class="form-control" id="project" placeholder="Contoh: Penyalahgunaan dana desa">
-                            <small id="error-project" class="form-text text-muted" style="color: red !important" v-if="errorProject">{{errorProject}}</small>
+                            <label for="subjectLaporan">Subjek Laporan</label>
+                            <input v-model="subjectLaporan" @keypress="checkValue('subjectLaporan')" type="text" class="form-control" id="subjectLaporan" placeholder="Contoh: Kepala desa">
+                            <small id="error-subjectLaporan" class="form-text text-muted" style="color: red !important" v-if="errorSubjectLaporan">{{errorSubjectLaporan}}</small>
                         </div>
                         <div class="form-group">
-                            <label for="message">Isi Laporan</label>
-                            <textarea v-model="message" @keypress="checkValue('message')" name="message" rows="5" id="message" class="form-control textarea" placeholder="Contoh: Silahkan tuliskan laporan anda secara jelas"></textarea>
-                            <small id="error-message" class="form-text text-muted" style="color: red !important" v-if="errorMessage">{{errorMessage}}</small>
+                            <label for="isiLaporan">Isi Laporan</label>
+                            <textarea v-model="isiLaporan" @keypress="checkValue('isiLaporan')" name="isiLaporan" rows="5" id="isiLaporan" class="form-control textarea" placeholder="Contoh: Silahkan tuliskan laporan anda secara jelas"></textarea>
+                            <small id="error-isiLaporan" class="form-text text-muted" style="color: red !important" v-if="errorIsiLaporan">{{errorIsiLaporan}}</small>
 
                         </div>
-                        <div class="form-group">
-                            <p class="message-file">Lampirkan file <span style="color:red; font-size:12px;">*jika ada*</span></p>
-                            <input type="file" ref="fileUpload" class="form-control" id="project" placeholder="Contoh: Penyalahgunaan dana desa">
-                        </div>
+                        <!-- <div class="form-group">
+                            <label for="file-upload">Lampirkan File Pendukung <span style="color: red; font-size: 12px;">*termasuk KTP anda & bukti lainnya*</span></label>
+                            <p class="isiLaporan-file">Lampirkan file <span style="color:red; font-size:12px;">*jika ada*</span></p>
+                            <input type="file" ref="fileUpload" class="form-control" id="subjectLaporan" placeholder="">
+                        </div> -->
                         <div class="form-group flex-auto send-button">
                             <Button
                                 data-toggle = 'modal'
@@ -58,11 +59,10 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-6">
-                    
-                        <div class="card-body text-center registration-image">
-                             <img  class="reg-image" src="~/assets/images/image-registration.svg"  alt="not found">
-                        </div>
+                <div class="image-form">
+                    <div class="card-body text-center registration-image">
+                        <img  class="reg-image" src="~/assets/images/image-registration.svg"  alt="not found">
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,14 +86,14 @@ export default {
             email: '',
             phone: '',
             titleLaporan: '',
-            project: '',
-            message: '',
+            subjectLaporan: '',
+            isiLaporan: '',
             errorName: '',
             errorEmail: '',
             errorPhone: '',
             errorTitleLaporan: '',
-            errorProject: '',
-            errorMessage: '',
+            errorSubjectLaporan: '',
+            errorIsiLaporan: '',
             errorFileUpload: '',
             sendData: false,
             sendFile: true,
@@ -116,29 +116,48 @@ export default {
             if (this.titleLaporan == '') {
                 this.errorTitleLaporan = 'Judul laporan harus di isi'
             }
-            if (this.project == '' ) {
-                this.errorProject = 'Jenis laporan harus di isi'
+            if (this.subjectLaporan == '' ) {
+                this.errorSubjectLaporan = 'Subjek laporan harus di isi'
             }
-            if (this.message == '') {
-                this.errorMessage = 'Isi laporan harus di isi'
+            if (this.isiLaporan == '') {
+                this.errorIsiLaporan = 'Isi laporan harus di isi'
             }
-            if (this.$refs.fileUpload) {
-                if (this.$refs.fileUpload.files[0].size > 2 * 1024) {
-                    this.errorMessage = 'File tidak boleh dari 2MB'
-                    sendFile = false
-                }
-            }
+            // if (this.$refs.fileUpload) {
+            //     if (this.$refs.fileUpload.files[0].size > 2 * 1024) {
+            //         this.errorisiLaporan = 'File tidak boleh dari 2MB'
+            //         sendFile = false
+            //     }
+            // }
         },
         clickRegister() {
-            console.log(this.$refs.fileUpload)
             this.validataInput()
             if (this.name && 
                 this.email &&
                 this.phone && 
                 this.titleLaporan && 
-                this.project &&
+                this.subjectLaporan &&
                 this.sendFile
                 ) {
+            let payload = {
+                nama: this.name,
+                email: this.email,
+                no_hp: `'${this.phone}`,
+                judul_laporan: this.titleLaporan,
+                subjek_laporan: this.subjectLaporan,
+                isi_laporan: this.isiLaporan,
+                file: this.file
+            }
+            axios.post('http://localhost:5000/',payload)
+            .then(res=>{
+                console.log('kalau berhasil');
+                console.log(res);
+                this.sendData = true    
+            })
+            .catch(err=>{
+                console.log('kalau error');
+                console.log(err);
+            })
+
                     this.sendData = true
 
             }
@@ -153,14 +172,14 @@ export default {
             if (param == 'phone') {
                 this.errorPhone = ''
             }
-            if (param == 'title-laporan') {
+            if (param == 'titleLaporan') {
                 this.errorTitleLaporan = ''
             }
-            if (param == 'project') {
-                this.errorProject = ''
+            if (param == 'subjectLaporan') {
+                this.errorSubjectLaporan = ''
             }
-            if (param == 'message') {
-                this.errorMessage = ''
+            if (param == 'isiLaporan') {
+                this.errorIsiLaporan = ''
             }
         },
         clickClose() {
@@ -168,8 +187,8 @@ export default {
             this.email = ''
             this.phone = ''
             this.titleLaporan = ''
-            this.project = ''
-            this.message = ''
+            this.subjectLaporan = ''
+            this.isiLaporan = ''
             this.fileUpload = ''
         },
 
@@ -182,12 +201,16 @@ export default {
         margin-left: -100;
     } */
     
-    .message-file {
+    .isiLaporan-file {
         margin-left: -170px;
+    }
+    .registrasi {
+        margin-top: 40px;
     }
     .registration-content {
         display: flex;
         justify-content: space-around;
+        align-items: flex-start;
     }
     .registration-image {
         margin-top: 450px;
@@ -219,32 +242,22 @@ export default {
         padding: 10px 30px;
         border-radius: 5px;
     }
-    @media (max-width: 768px) {
-        .registrasi {
-            margin-top: 50px;
-            padding: 0px 20px;
-        }
-        .card-body  {
-            width: 100%;
-            padding: 0px 0px;
-            margin: 0px 0px;
-        }
-        .col-md-4 {
-            width: 100%;
-            padding: 0px 20px;
-            margin: 0px 0px;
-        }
-        .col-me-6 {
-            width: 100% !important;
-            margin: 0px 0px;
-            padding: 0px 0px;
+    @media(max-width: 1024px) {
+        .image-form 
+        .registration-image .reg-image {
+            display: none;
         }
     }
     @media(max-width: 860px) {
-         .reg-image{
+        .image-form {
+            display: none ;
+        }
+        .form {
             width: 100%;
             margin: 0px 0px;
-            padding: 0px 0px;
+        }
+        .form-group {
+            width: 350px;
         }
     }
 </style>

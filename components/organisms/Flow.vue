@@ -90,6 +90,7 @@ export default {
             width: 100%;
             margin: 0px 0px 20px;
             padding: 0px 0px;
+            font-size: 22px;
         }
         .flowusers-image {
             width: 100%;

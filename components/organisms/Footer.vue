@@ -9,12 +9,18 @@
                     yang disampaikan oleh masyarakat kepada pemerintah Kabupaten Padang Lawas mealui Inspektorat
                 </p>
             </div>
-
+            <div class="layanan">
+                <h5>Jam Layanan</h5>
+                <p>Senin - Jumat</p>
+                <p>08.00 - 17.00</p>
+        
+            </div>
             <div class="contact">
                 <div class="contact-us-mediasosial">
                     <h5>Media Sosial</h5>
-                    <a href="https://www.instagram.com/bimbinganbareng/"><img class="ig" src="~/assets/images/ig.png" alt="not found"></a>
-                    <a href="#"><img class="fb" src="~/assets/images/fb.png" alt="not found"></a>
+                    <a href="https://www.instagram.com/bimbinganbareng/"><img class="ig" style="width: 50px; height: 50px" src="~/assets/images/ig.png" alt="not found"></a>
+                    <a href="#"><img class="fb" style="width: 50px; height: 50px" src="~/assets/images/fb.png" alt="not found"></a>
+                    <a href="#"><img class="fb" style="width: 50px; height: 50px" src="~/assets/images/yt.png" alt="not found"></a>
                 </div>
                 <div class="contact-us-address">
                     <h5>Alamat</h5>
@@ -23,14 +29,15 @@
                 <div class="contact-us-call">
                     <h5>Hubungi Kami</h5>
                     <div class="call-number">
-                        <a href="https://wa.me/6282362574353?text=Selamat%20datang%20di%20Bimbinganbareng.id.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank"><img src="~/assets/images/call.png" alt="not found"></a>
-                        <p><a href="https://wa.me/6282362574353?text=Selamat%20datang%20di%20Bimbinganbareng.id.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank">0823-6257-4353</a></p>
+                        <!-- <a href="https://wa.me/6282362574353?text=Selamat%20datang%20di%20Bimbinganbareng.id.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank"><img src="~/assets/images/call.png" alt="not found"></a> -->
+                        <p><a href="https://wa.wizard.id/4a2aed" target="_blank">0822-5314-1167</a></p>
+                        <p><a href="mailto:dumasinspektoratpls@gmail.com">dumasinspektoratpls@gmail.com</a></p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="patent">
-            <p>©Copyright 2021 dumasinspektoratpalas.go.id</p>
+            <p>©Copyright 2021 dumasinspektoratpalas.co.id</p>
         </section>
     </footer>
     
@@ -49,6 +56,10 @@ export default {
         padding: 70px 0px;
         display: flex;
         justify-content: space-around;
+        align-items: baseline;
+    }
+    .footer p {
+        font-weight: 200px;
     }
     .title h5 {
         font-weight: 700;
@@ -58,11 +69,22 @@ export default {
         width: 500px;
         font-size: 16px;
     }
+    .layanan h5 {
+        font-weight: 700;
+    }
+    .layanan p {
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
     .contact h5 {
         font-weight: 700;
     }
     .contact p {
         font-weight: 700;
+    }
+    .contact-us-mediasosial img:hover {
+        opacity: 0.4;
+        background-color: black;
     }
     .contact-us-address {
         margin-top: 30px;
@@ -71,13 +93,15 @@ export default {
         margin-top: 30px;
     }
     .call-number {
-        display: flex;
+        display: block;
         align-items: center;
-        /* margin-bottom: 40px; */
+    }
+    .call-number p a {
+        color: white;
+        margin-top: -15px;
     }
     .call-number p {
-        margin-left: 20px;
-        margin-top: 20px;
+        margin-bottom: 0px;
     }
     .ig {
         object-fit: cover;
@@ -91,25 +115,32 @@ export default {
         text-align: center;
     }
     .patent p{
-        font-size: 16px;
+        font-size: 12px;
         color: white;
-        font-weight: 700;
+        /* font-weight: 700; */
         padding: 15px;
         /* color: #0B090A; */
         margin-bottom: 0px;
     }
-    @media(max-width: 578px) {
-        .contact-us, .email-us{
-            margin-top: 30px;
-        }
-        .patent p {
+    @media(max-width: 792px) {
+        .footer {
+            display: block;
             width: 100%;
-            margin: 0px 0px;
-            padding-left: 30px;
+            /* margin: 0px 20px; */
+            padding: 60px 20px;
+        }
+        .footer h5 {
+            font-size: 16px;
+        }
+        .footer p {
+            max-width: 100%;
             font-size: 12px;
         }
-        .row {
-            padding: 0px 20px;
+        .patent p{
+            font-size: 8px;
+        }
+        .layanan {
+            padding: 0px 0px 20px 0px;
         }
     }
 </style>

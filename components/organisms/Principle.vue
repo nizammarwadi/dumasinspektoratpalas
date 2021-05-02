@@ -2,9 +2,11 @@
     <section class="principle">
         <div class="principle-left">
             <div>
-                <h3>Ayo ikut serta berpartisipasi dalam menegakkan keadilan untuk masyarakat yang lebih baik </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maxime quam numquam recusandae distinctio. Officia nam totam laboriosam unde provident nihil, excepturi esse ipsa quisquam velit autem fugiat libero reprehenderit. </p>
-                <button class="btn btn-primary"> Fast Response</button>
+                <h3>Jika anda melihat penyimpangan dalam kinerja pemerintahan Kabupaten Padang Lawas, segera laporkan !!! </h3>
+                <p>Partisipasi anda dalam pengaduan ini sangat berarti bagi pembangunan Kab. Padang Lawas yang BERCAHAYA (beriman, cerdas,sehat,sejahtera dan berbudaya) </p>
+                <button class="btn btn-primary mr-4"> Respon Cepat</button>
+                <button class="btn btn-danger">Span Lapor</button>
+
             </div>
         </div>
         <div class="principle-middle mr-2">
@@ -47,6 +49,35 @@ export default {
     }
     .principle-right img {
         object-fit: cover;
+    }
+    @media (max-width: 792px) {
+        .principle {
+            padding: 0px 20px;
+        }
+        .principle-left {
+            max-width: 40%;
+            background-color: rgb(245, 246, 247);
+            padding: 20px 0px;
+            position: relative;
+            margin-right: -40px;
+            box-shadow: 10px 10px 5px white;
+            opacity: .9;
+        }
+        .principle-left h3 {
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .principle-left p {
+            font-size: 10px;
+        }
+        .principle-middle img {
+            width: 150px;
+            height: 300px;
+        }
+        .principle-right img {
+            width: 100px;
+            height: 200px;
+        }
     }
 
 </style>

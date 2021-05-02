@@ -1,9 +1,9 @@
 <template>
     <section id="about" class="about">
-        <h3>ABOUT SHORTLY US</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, dolor harum nulla debitis dolore quos sequi laboriosam beatae, quisquam aperiam magnam nostrum quasi eveniet dignissimos? Quas, odit tempora. Repudiandae, sunt.</p>
+        <h3>SEKILAS TENTANG KAMI</h3>
+        <p>Ayo lebih dekat dengan kami !!! Kami selalu berkomitmen memberikan pelayanan yang terbaik dalam fungsional pemerintahan agar tercapai kesejahteraan masyarakat yang berkeadilan sosial bagi seluruh rakyat Indonesia</p>
         <div class="content">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eaGm7_IoR4M" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hEeBcrsZe04" allowfullscreen></iframe>
         </div>
     </section>
 </template>
@@ -49,55 +49,31 @@ export default {
         border-radius: 0px;
         /* box-shadow: 0px 0px 55px rgb(115, 125, 165); */
     }
-
-</style>
-<script>
-export default {
-
-}
-</script>
-
-<style>
-/* .about::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.6));
-    position: absolute;
-    bottom: 0;       
-}  */
-/* .title {
-    position: relative;
-    z-index: 1;
-} */
-/* .content {
-    position: relative;
-    z-index: 1;
-} */
-/* @media(max-width: 768px) {
-    .about{
-        width: 100%;
-        margin: 50px auto 0px;
-        padding: 0px;
+    @media (max-width: 992px) {
+        iframe {
+            width: 600px;
+            height: 280px;
+            border-radius: 0px;
+        }
+        .about p {
+            max-width: 100%;
+            text-align: center;
+            margin: 0px auto;
+            font-size: 20px;
+            padding: 0px 20px;
+        }
     }
-    .about-title .content {
-        width: 100%;
-        margin: 0px auto;
-        padding: 0px 10px 10px 10px;
-        font-size: 17px;
-        display: none;
-                
-    }
-    .container .row .col{
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-        
-    }
-    iframe{
-        width: 70%;
-        height: 180px;
-
-    } */
+     @media (max-width: 592px) {
+         iframe {
+            width: 360px;
+            height: 230px;
+            border-radius: 0px;
+         }
+         .about P {
+             font-size: 15px;
+         }
+         .about h3 {
+             font-size: 23px;
+         }
+     }
 </style>
