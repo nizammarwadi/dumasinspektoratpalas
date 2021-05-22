@@ -39,11 +39,11 @@
                             <small id="error-isiLaporan" class="form-text text-muted" style="color: red !important" v-if="errorIsiLaporan">{{errorIsiLaporan}}</small>
 
                         </div>
-                        <!-- <div class="form-group">
+                        <div class="form-group">
                             <label for="file-upload">Lampirkan File Pendukung <span style="color: red; font-size: 12px;">*termasuk KTP anda & bukti lainnya*</span></label>
-                            <p class="isiLaporan-file">Lampirkan file <span style="color:red; font-size:12px;">*jika ada*</span></p>
-                            <input type="file" ref="fileUpload" class="form-control" id="subjectLaporan" placeholder="">
-                        </div> -->
+                            <!-- <p class="isiLaporan-file">Lampirkan file <span style="color:red; font-size:12px;">*jika ada*</span></p> -->
+                            <input @change="previewFiles" type="file" ref="fileUpload" class="form-control" id="subjectLaporan" placeholder="">
+                        </div>
                         <div class="form-group flex-auto send-button">
                             <Button
                                 data-toggle = 'modal'
@@ -95,6 +95,7 @@ export default {
             errorSubjectLaporan: '',
             errorIsiLaporan: '',
             errorFileUpload: '',
+            file: null,
             sendData: false,
             sendFile: true,
         }
@@ -103,6 +104,10 @@ export default {
         
     },
     methods: {
+        previewFiles(event) {
+            this.file = event.target.files
+            console.log(event.target.files);
+        },
         validataInput() {
             if (this.name == '') {
                 this.errorName = 'Nama tidak boleh kosong'
@@ -122,6 +127,7 @@ export default {
             if (this.isiLaporan == '') {
                 this.errorIsiLaporan = 'Isi laporan harus di isi'
             }
+           
             // if (this.$refs.fileUpload) {
             //     if (this.$refs.fileUpload.files[0].size > 2 * 1024) {
             //         this.errorisiLaporan = 'File tidak boleh dari 2MB'
@@ -138,16 +144,44 @@ export default {
                 this.subjectLaporan &&
                 this.sendFile
                 ) {
-            let payload = {
-                nama: this.name,
-                email: this.email,
-                no_hp: `'${this.phone}`,
-                judul_laporan: this.titleLaporan,
-                subjek_laporan: this.subjectLaporan,
-                isi_laporan: this.isiLaporan,
-                file: this.file
-            }
-            axios.post('http://localhost:5000/',payload)
+            // let payload = {
+            //     nama: this.name,
+            //     email: this.email,
+            //     no_hp: `'${this.phone}`,
+            //     judul_laporan: this.titleLaporan,
+            //     subjek_laporan: this.subjectLaporan,
+            //     isi_laporan: this.isiLaporan,
+            //     file: this.file
+            // }
+
+            // var bodyFormData = new FormData();
+            // bodyFormData.append('key', 'value');
+            // bodyFormData.append('image', imageFile); 
+            // axios({
+            // method: "post",
+            // url: "myurl",
+            // data: bodyFormData,
+            // headers: { "Content-Type": "multipart/form-data" },
+            // })
+            // .then(function (response) {
+            //     console.log(response);
+            // })
+            // .catch(function (response) {
+            //     console.log(response);
+            // });
+
+            const formData = new FormData()
+                formData.append('nama', this.name)
+                formData.append('email', this.email)
+                formData.append('no_hp', `'${this.phone}`)
+                formData.append('judul_laporan', this.titleLaporan)
+                formData.append('subjek_laporan', this.subjekLaporan)
+                formData.append('file', this.file)
+                axios.post('http://localhost:5000/',
+                formData, 
+                {headers: {'Content-Type': 'multipart/form-data'
+                }}
+            )
             .then(res=>{
                 console.log('kalau berhasil');
                 console.log(res);
@@ -252,12 +286,6 @@ export default {
         .image-form {
             display: none ;
         }
-        .form {
-            width: 100%;
-            margin: 0px 0px;
-        }
-        .form-group {
-            width: 350px;
-        }
+      
     }
 </style>
