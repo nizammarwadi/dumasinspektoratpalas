@@ -55,11 +55,11 @@ export default {
             padding: 0px 20px;
         }
         .principle-left {
-            max-width: 40%;
+            max-width: 30%;
             background-color: rgb(245, 246, 247);
             padding: 20px 0px;
             position: relative;
-            margin-right: -40px;
+            margin-right: -35px;
             box-shadow: 10px 10px 5px white;
             opacity: .9;
         }
@@ -71,11 +71,11 @@ export default {
             font-size: 10px;
         }
         .principle-middle img {
-            width: 150px;
+            width: 130px;
             height: 300px;
         }
         .principle-right img {
-            width: 100px;
+            width: 90px;
             height: 200px;
         }
     }

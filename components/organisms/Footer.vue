@@ -74,13 +74,13 @@ export default {
     }
     .layanan p {
         margin-bottom: 0px;
-        font-weight: 700;
+        font-weight: 400;
     }
     .contact h5 {
         font-weight: 700;
     }
     .contact p {
-        font-weight: 700;
+        font-weight: 400;
     }
     .contact-us-mediasosial img:hover {
         opacity: 0.4;

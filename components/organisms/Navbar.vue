@@ -31,7 +31,7 @@
                     <a class="nav-link js-scroll-trigger text-white" @click="toFlowusersSection">PROSES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger text-white" href="#keuangan">BERITA</a>
+                    <a class="nav-link js-scroll-trigger text-white" @click="toNewsSection" href="/news">BERITA</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger text-white" @click="toFooterSection">HUBUNGI KAMI</a>

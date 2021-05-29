@@ -3,7 +3,7 @@
         <div class="container">
             <div class="registration-content">
                 <div class="form-reg">
-                    <h2 class="title">Form Pengaduan</h2>
+                    <h2 class="title">FORM PENGADUAN</h2>
                     <form>
                         <div class="form-group">
                             <label class="title-name" for="name">Nama</label>
@@ -250,7 +250,7 @@ export default {
         margin-top: 450px;
     }
     .title {
-        font-size: 32px;
+        font-size: 23px;
         font-weight: 700;
     }
     .form-control{
@@ -280,11 +280,19 @@ export default {
         .image-form 
         .registration-image .reg-image {
             display: none;
+
         }
     }
     @media(max-width: 860px) {
         .image-form {
             display: none ;
+        }
+        .form-group {
+            padding: 0px 5%;
+        }
+        .form-reg .title {
+            text-align: center;
+            margin: 70px 0px 30px 0px;
         }
       
     }
