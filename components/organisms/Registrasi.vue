@@ -106,7 +106,6 @@ export default {
     methods: {
         previewFiles(event) {
             this.file = event.target.files
-            console.log(event.target.files);
         },
         validataInput() {
             if (this.name == '') {
@@ -142,59 +141,29 @@ export default {
                 this.phone && 
                 this.titleLaporan && 
                 this.subjectLaporan &&
-                this.sendFile
-                ) {
-            // let payload = {
-            //     nama: this.name,
-            //     email: this.email,
-            //     no_hp: `'${this.phone}`,
-            //     judul_laporan: this.titleLaporan,
-            //     subjek_laporan: this.subjectLaporan,
-            //     isi_laporan: this.isiLaporan,
-            //     file: this.file
-            // }
-
-            // var bodyFormData = new FormData();
-            // bodyFormData.append('key', 'value');
-            // bodyFormData.append('image', imageFile); 
-            // axios({
-            // method: "post",
-            // url: "myurl",
-            // data: bodyFormData,
-            // headers: { "Content-Type": "multipart/form-data" },
-            // })
-            // .then(function (response) {
-            //     console.log(response);
-            // })
-            // .catch(function (response) {
-            //     console.log(response);
-            // });
-
-            const formData = new FormData()
-                formData.append('nama', this.name)
-                formData.append('email', this.email)
-                formData.append('no_hp', `'${this.phone}`)
-                formData.append('judul_laporan', this.titleLaporan)
-                formData.append('subjek_laporan', this.subjekLaporan)
-                formData.append('file', this.file)
-                axios.post('http://localhost:5000/',
-                formData, 
-                {headers: {'Content-Type': 'multipart/form-data'
-                }}
-            )
-            .then(res=>{
-                console.log('kalau berhasil');
-                console.log(res);
-                this.sendData = true    
-            })
-            .catch(err=>{
-                console.log('kalau error');
-                console.log(err);
-            })
-
+                this.sendFile) {
+                    const formData = new FormData()
+                    formData.append('nama', this.name)
+                    formData.append('email', this.email)
+                    formData.append('no_hp', `'${this.phone}`)
+                    formData.append('judul_laporan', this.titleLaporan)
+                    formData.append('subjek_laporan', this.subjectLaporan)
+                    formData.append('isi_laporan', this.isiLaporan)
+                    formData.append('file', this.file[0])
+                    axios.post('http://localhost:4000/', formData, {
+                        headers: {'Content-Type': 'multipart/form-data'
+                    }})
+                    .then(res=>{
+                        console.log('kalau berhasil');
+                        console.log(res);
+                        this.sendData = true    
+                    })
+                    .catch(err=>{
+                        console.log('kalau error');
+                        console.log(err);
+                    })
                     this.sendData = true
-
-            }
+             }
         },
         checkValue(param) {
             if (param == 'name') {
