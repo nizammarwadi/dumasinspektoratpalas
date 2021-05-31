@@ -150,7 +150,7 @@ export default {
                     formData.append('subjek_laporan', this.subjectLaporan)
                     formData.append('isi_laporan', this.isiLaporan)
                     formData.append('file', this.file[0])
-                    axios.post('http://localhost:4000/', formData, {
+                    axios.post('https://powerful-caverns-77607.herokuapp.com/', formData, {
                         headers: {'Content-Type': 'multipart/form-data'
                     }})
                     .then(res=>{
