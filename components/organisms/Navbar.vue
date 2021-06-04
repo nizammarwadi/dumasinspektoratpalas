@@ -14,9 +14,6 @@
                 <li class="nav-item active">
                     <a class="nav-link js-scroll-trigger" href="#">BERANDA <span class="sr-only">(current)</span></a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger text-white" @click="toProfilSection">PROFIL</a>
-                </li> -->
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         PROFIL
@@ -24,14 +21,14 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" @click="toProfilSection">TENTANG KAMI </a>
                     <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/dumasinspektoratpalas/struktur-inspektorat">STRUKTUR</a>
+                        <a class="dropdown-item" href="/struktur-inspektorat">STRUKTUR</a>
                     </div>
                 </li>
                     <li class="nav-item">
                     <a class="nav-link js-scroll-trigger text-white" @click="toFlowusersSection">PROSES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger text-white" @click="toNewsSection" href="/news">BERITA</a>
+                    <a class="nav-link js-scroll-trigger text-white" href="/news">BERITA</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger text-white" @click="toFooterSection">HUBUNGI KAMI</a>
