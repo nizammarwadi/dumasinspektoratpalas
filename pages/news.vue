@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <NavbarNew/>
         <div class="row justify-content-start">
             <div class="col">
                 <div v-for="(item, index) in dataArticles" :key="index" class="card-content">
@@ -16,10 +17,12 @@
 </template>
 
 <script>
+import NavbarNew from "~/components/organisms/NavbarNew"
 import axios from 'axios'
 import Card from '~/components/organisms/Card.vue'
 export default {
     components: {
+        NavbarNew,
         Card: Card,
     },
     props:  {
@@ -48,6 +51,9 @@ export default {
 </script>
 
 <style>
+.card-content {
+    margin-top: 110px;
+}
 .card-content {
     display: inline-block;
 }

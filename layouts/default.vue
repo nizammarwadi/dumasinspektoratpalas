@@ -3,7 +3,6 @@
     <Nuxt />
   </div>
 </template>
-
 <style>
 body {
   font-family: Nunito !important;

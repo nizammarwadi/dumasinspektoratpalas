@@ -10,6 +10,7 @@
     <!-- <Team/>/ -->
     <Registrasi/>
     <Footer/>
+    <ButtonResponse/>
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import Flow from "~/components/organisms/Flow"
 import Team from "~/components/organisms/Team"
 import Registrasi from "~/components/organisms/Registrasi"
 import Footer from "~/components/organisms/Footer"
+import ButtonResponse from "~/components/atoms/ButtonResponse"
 export default {
   components: {
     Navbar: Navbar,
@@ -36,10 +38,10 @@ export default {
     Registrasi: Registrasi,
     Team: Team,
     Footer: Footer,
+    ButtonResponse,
   }
 }
 </script>
-
 <style>
 
 </style>

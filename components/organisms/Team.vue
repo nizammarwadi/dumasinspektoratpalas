@@ -132,7 +132,7 @@ export default {
 
 <style>
 .container h2 {
-    margin-top: 50px;
+    margin-top: 100px;
     font-weight: 700;
     margin-bottom: 80px;
 }
