@@ -21,7 +21,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" @click="toProfilSection">TENTANG KAMI </a>
                     <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://www.instagram.com/humasinspektoratpalas/">STRUKTUR</a>
+                        <a class="dropdown-item" href="/struktur-inspektorat">STRUKTUR</a>
                     </div>
                 </li>
                     <li class="nav-item">
