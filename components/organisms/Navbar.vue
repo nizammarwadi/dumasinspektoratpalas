@@ -14,14 +14,14 @@
                 <li class="nav-item active">
                     <a class="nav-link js-scroll-trigger" href="#">BERANDA <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown ">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         PROFIL
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" @click="toProfilSection">TENTANG KAMI </a>
                     <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://www.instagram.com/humasinspektoratpalas/">>STRUKTUR</a>
+                        <a class="dropdown-item" href="https://www.instagram.com/humasinspektoratpalas/">STRUKTUR</a>
                     </div>
                 </li>
                     <li class="nav-item">

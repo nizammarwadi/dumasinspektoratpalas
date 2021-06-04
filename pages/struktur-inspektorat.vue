@@ -1,5 +1,5 @@
 <template>
-    <div class="struktur_inspektorat-container">
+    <div class="struktur-inspektorat-container">
         <Team/>
         <Footer/>
     </div>
