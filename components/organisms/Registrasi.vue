@@ -152,7 +152,8 @@ export default {
                     formData.append('file', this.file[0])
                     axios.post('https://powerful-caverns-77607.herokuapp.com/', formData, {
                         headers: {'Content-Type': 'multipart/form-data'
-                    }})
+                        // http://localhost:4000/
+                    }})``
                     .then(res=>{
                         console.log('kalau berhasil');
                         console.log(res);
