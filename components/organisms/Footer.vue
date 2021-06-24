@@ -24,7 +24,8 @@
                 </div>
                 <div class="contact-us-address">
                     <h5>Alamat</h5>
-                    <p>Jl. Lintas Sibuhuan - Riau Km. 3 Sibuhuan  <br>Kabupaten Padang Lawas Provinsi Sumatera Utara</p>
+                    <a href="https://www.google.co.id/maps/place/Inspektorat+Padang+Lawas/@1.0423189,99.7485166,14z/data=!4m9!1m2!2m1!1sInspektorat+Padang+Lawas!3m5!1s0x302b9bafa15eeba5:0x43a6df491960251a!8m2!3d1.0422707!4d99.7638376!15sChhJbnNwZWt0b3JhdCBQYWRhbmcgTGF3YXOSARFnb3Zlcm5tZW50X29mZmljZQ">
+                    <p>Jl. Lintas Sibuhuan - Riau Km. 3 Sibuhuan  <br>Kabupaten Padang Lawas Provinsi Sumatera Utara</p></a>
                 </div>
                 <div class="contact-us-call">
                     <h5>Hubungi Kami</h5>
@@ -88,6 +89,9 @@ export default {
     }
     .contact-us-address {
         margin-top: 30px;
+    }
+    .contact-us-address p {
+        color: white;
     }
     .contact-us-call {
         margin-top: 30px;

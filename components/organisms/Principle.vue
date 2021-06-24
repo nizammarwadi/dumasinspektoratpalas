@@ -5,7 +5,7 @@
                 <h3>Jika anda melihat penyimpangan dalam kinerja pemerintahan Kabupaten Padang Lawas, segera laporkan !!! </h3>
                 <p>Partisipasi anda dalam pengaduan ini sangat berarti bagi pembangunan Kab. Padang Lawas yang BERCAHAYA (beriman, cerdas,sehat,sejahtera dan berbudaya) </p>
                 <!-- <button class="btn btn-primary mr-4"> Respon Cepat</button> -->
-                <button class="btn btn-danger">Span Lapor</button>
+                <a href="https://www.lapor.go.id/"><button class="btn btn-danger">Span Lapor</button></a>
 
             </div>
         </div>

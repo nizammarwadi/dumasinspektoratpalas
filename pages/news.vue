@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <NavbarNew/>
-        <div class="row justify-content-start">
+        <div class="mt-5 row justify-content-start">
             <div class="col">
                 <div v-for="(item, index) in dataArticles" :key="index" class="card-content">
                     <Card
@@ -51,13 +51,14 @@ export default {
 </script>
 
 <style>
-.card-content {
-    margin-top: 110px;
-}
+
 .card-content {
     display: inline-block;
 }
 .col {
     text-align: center;
+}
+.card-title {
+    text-align: left;
 }
 </style>
