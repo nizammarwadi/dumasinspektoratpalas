@@ -38,7 +38,7 @@ export default {
 <style>
     .info-panel {
         background-color:white;
-        margin-top: -80px;
+        margin-top: -45px;
         /* padding: 20px 60px; */
         border-radius: 12px;
         box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);

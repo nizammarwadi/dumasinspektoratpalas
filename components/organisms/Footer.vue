@@ -38,7 +38,7 @@
             </div>
         </section>
         <section class="patent">
-            <p>©Copyright 2021 dumasinspektoratpalas.co.id</p>
+            <p>©Copyright 2021 dumas-inspektorat.padanglawaskab.go.id</p>
         </section>
     </footer>
     

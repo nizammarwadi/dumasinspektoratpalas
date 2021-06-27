@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar/>
+    <PanelTop/>
     <Jumbotron/>
     <Panel/>
     <!-- <Carousel/> -->
@@ -15,6 +16,7 @@
 </template>
 
 <script>
+import PanelTop from "~/components/organisms/PanelTop"
 import Navbar from "~/components/organisms/Navbar"
 import Jumbotron from "~/components/organisms/Jumbotron"
 import Panel from "~/components/organisms/Panel"
@@ -28,6 +30,7 @@ import Footer from "~/components/organisms/Footer"
 import ButtonResponse from "~/components/atoms/ButtonResponse"
 export default {
   components: {
+    PanelTop: PanelTop,
     Navbar: Navbar,
     Jumbotron: Jumbotron,
     Panel: Panel,

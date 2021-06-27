@@ -116,10 +116,7 @@ export default {
         border: none;
         margin-left: 70px;
         border-bottom-right-radius: 25px;
-        color: white !important;
-    }
-    a .dropdown-item:hover{
-        background-color: black;
+        /* color: white !important; */
     }
     .navbar {
         /* background-color: rgb(104, 157, 213); */
