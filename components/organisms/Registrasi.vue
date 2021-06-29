@@ -7,19 +7,19 @@
                     <form>
                         <div class="form-group">
                             <label class="title-name" for="name">Nama</label>
-                            <input v-model="name" @keypress="checkValue('name')" type="text" class="form-control" id="name" placeholder="Contoh: Ucok Bala">
+                            <input v-model="name" @keypress="checkValue('name')" type="text" class="form-control" id="name" placeholder="Contoh: Ucok">
                             <small id="error-name" class="form-text text-muted" style="color: red !important" v-if="errorName">{{ errorName }}</small>
 
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input v-model="email" @keypress="checkValue('email')" type="email" class="form-control" id="email" placeholder="Contoh: ucokbala@mail.com">
+                            <input v-model="email" @keypress="checkValue('email')" type="email" class="form-control" id="email" placeholder="Contoh: ucok@gmail.com">
                             <small id="error-email" class="form-text text-muted" style="color: red !important" v-if="errorEmail">{{errorEmail}}</small>
 
                         </div>
                         <div class="form-group">    
                             <label for="phone">Ponsel (Whatsapp)</label>
-                            <input v-model="phone" @keypress="checkValue('phone')" type="number" class="form-control" id="phone" placeholder="Contoh: 0822 2123 5445">
+                            <input v-model="phone" @keypress="checkValue('phone')" type="number" class="form-control" id="phone" placeholder="Contoh: 082221235445">
                             <small id="error-phone" class="form-text text-muted" style="color: red !important" v-if="errorPhone">{{errorPhone}}</small>
 
                         </div>

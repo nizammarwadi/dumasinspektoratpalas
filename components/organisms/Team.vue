@@ -12,7 +12,7 @@
             </div>
             <div class="col">
                 <img class="image_team-top" src="~/assets/images/Mukhlis Arif Harahap, M.Si (Sekretaris).jpeg" style="width: 270px; height: 340px;" alt="">
-                <h6> Mukhlis Arif Harahap, M.Si</h6>
+                <h6> Mukhlis Arif Harahap, SE, M.Si</h6>
                 <p>SEKRETARIS</p>
 
             </div>
@@ -69,7 +69,7 @@
             </div>
             <div class="col">
                 <img class="image_team-bottom" src="~/assets/images/Ardiyo, S.Thi (Auditor Muda).jpeg" style="width: 150px; height: 200px" alt="">
-                <h6>Ardiyo, S.Thi</h6>
+                <h6>Ardiyon, S.Thi</h6>
                 <p>Auditor Muda</p>
             </div>
             <div class="col">

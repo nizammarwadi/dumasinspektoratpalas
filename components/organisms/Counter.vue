@@ -1,4 +1,5 @@
 <template>
+    <div class="container">
     <div class="row mt-5 counters counters-text-dark">
         <div class="col-lg-3 col-sm-6">
             <div class="counter appear-animation animated fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
@@ -41,6 +42,7 @@
 					</div>
 				</div>
 			</div>
+    </div>
 </template>
 
 <script>

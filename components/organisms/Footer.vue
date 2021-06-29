@@ -5,8 +5,8 @@
                 <div>
                     <h5>E-DUMAS INSPEKTORAT PALAS</h5>
                 </div>
-                <p>E-Dumas Inspektorat Palas adalah Proses Penyampaian Informasi yang berisi keluhan dan ketidakpuasan 
-                    yang disampaikan oleh masyarakat kepada pemerintah Kabupaten Padang Lawas mealui Inspektorat
+                <p>E-Dumas Inspektorat Palas adalah proses penyampaian informasi yang berisi keluhan dan ketidakpuasan 
+                    yang disampaikan oleh masyarakat kepada pemerintah Kabupaten Padang Lawas melalui Inspektorat
                 </p>
             </div>
             <div class="layanan">
