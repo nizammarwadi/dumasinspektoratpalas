@@ -6,11 +6,11 @@
                     <div class="rulesContent col">
                         <h3>LATAR BELAKANG</h3>
                         <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Terbatasnya komunikasi pemerintah dengan warga</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Terbatasnya komunikasi pemerintah dengan masyarakat</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Penyampaian aspirasi masyarakat tidak mudah</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Pengaduan yang disampaiakan tidak bisa dimonitor tindak lanjutnya</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Pengaduan yang disampaikan tidak bisa dimonitor tindak lanjutnya</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Kurangnya fasilitas untuk partisipasi masyarakat dalam pengaduan</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Inovasi dibidang teknologi dalam instansi pemerintah </a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Kurangnya inovasi dibidang teknologi dalam instansi pemerintah </a>
                         </div>
                     </div>
                     <div class="col">
@@ -35,7 +35,7 @@
                         <h3>MANFAAT</h3>
                         <div class="list-group">
                             <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Lancarnya komunikasi masyarakat dengan pemerintah</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Partisipasi masyarakat dalam pembangunan pemerintah daerah yang bersih</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Partisipasi masyarakat dalam pembangunan pemerintahan daerah terserap dengan baik</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-success">Transparansi penanganan pengaduan dari masyarakat</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Pemerintah dapat memonitoring pengaduan masyarakat dalam instansi pemerintah daerah</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Terukurnya kinerja SKPD dalam menangani pengaduan masyarakat</a>

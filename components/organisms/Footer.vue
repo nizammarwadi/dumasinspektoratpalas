@@ -18,9 +18,9 @@
             <div class="contact">
                 <div class="contact-us-mediasosial">
                     <h5>Media Sosial</h5>
-                    <a href="https://www.instagram.com/bimbinganbareng/"><img class="ig" style="width: 50px; height: 50px" src="~/assets/images/ig.png" alt="not found"></a>
-                    <a href="#"><img class="fb" style="width: 50px; height: 50px" src="~/assets/images/fb.png" alt="not found"></a>
-                    <a href="#"><img class="fb" style="width: 50px; height: 50px" src="~/assets/images/yt.png" alt="not found"></a>
+                    <a href="https://www.instagram.com/humasinspektoratpalas/"><img class="ig" style="width: 50px; height: 50px" src="~/assets/images/ig.png" alt="not found"></a>
+                    <a href="https://web.facebook.com/humasinspektoratpalas.humasinspektoratpalas/"><img class="fb" style="width: 50px; height: 50px" src="~/assets/images/fb.png" alt="not found"></a>
+                    <a href="https://www.youtube.com/channel/UCw-OZB9jz4Dc4rZhrWUmy0Q"><img class="fb" style="width: 50px; height: 50px" src="~/assets/images/yt.png" alt="not found"></a>
                 </div>
                 <div class="contact-us-address">
                     <h5>Alamat</h5>

@@ -40,7 +40,7 @@
 
                         </div>
                         <div class="form-group">
-                            <label for="file-upload">Lampirkan File Pendukung <span style="color: red; font-size: 12px;">*termasuk KTP anda & bukti lainnya*</span></label>
+                            <label for="file-upload">Lampirkan File Pendukung <span style="color: red; font-size: 12px;">*termasuk KTP anda & bukti lainnya dalam 1 file*</span></label>
                             <!-- <p class="isiLaporan-file">Lampirkan file <span style="color:red; font-size:12px;">*jika ada*</span></p> -->
                             <input @change="previewFiles" type="file" ref="fileUpload" class="form-control" id="subjectLaporan" placeholder="">
                         </div>

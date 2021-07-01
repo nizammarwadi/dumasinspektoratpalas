@@ -22,7 +22,7 @@
             </div> -->
             <div class="mentoring" style="width: 130px; ">
                 <img src="~/assets/images/konsultasi.png" alt="not found">
-                <p>Umpan Balik</p>
+                <p>Tindak Lanjut</p>
             </div>
             <div class="mentoring" style="width: 130px; ">
                 <img src="~/assets/images/selesai.png" alt="not found">
