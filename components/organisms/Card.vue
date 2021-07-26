@@ -20,7 +20,7 @@
 
 <script>
 export default {
-    props: {
+    props: { 
         urlToImage: "",
         cardTitle: "",
         cardUrl: "",
