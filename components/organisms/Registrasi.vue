@@ -4,6 +4,9 @@
             <div class="registration-content">
                 <div class="form-reg">
                     <h2 class="title">FORM PENGADUAN</h2>
+                     <p>Di larang menyebarkan informasi HOAKS dan BERITA BOHONG,<br>
+                        mari! bijak dalam penggunaan layanan teknologi informasi*
+                    </p>
                     <form>
                         <div class="form-group">
                             <label class="title-name" for="name">Nama</label>
@@ -203,7 +206,12 @@ export default {
     /* .title-name {
         margin-left: -100;
     } */
-    
+    .form-reg p {
+        background-color: silver;
+        color: red;
+        padding: 20px 20px;
+        border-radius: 20px;
+    }
     .isiLaporan-file {
         margin-left: -170px;
     }
@@ -249,7 +257,6 @@ export default {
         .image-form 
         .registration-image .reg-image {
             display: none;
-
         }
     }
     @media(max-width: 860px) {
@@ -262,6 +269,9 @@ export default {
         .form-reg .title {
             text-align: center;
             margin: 70px 0px 30px 0px;
+        }
+        .form-reg p {
+            text-align: center;
         }
       
     }

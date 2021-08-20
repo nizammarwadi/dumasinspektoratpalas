@@ -54,6 +54,11 @@ export default {
 </script>
 
 <style>
+    .rules {
+        background-color: seagreen;
+        padding-top: 80px;
+        padding-bottom: 5px;
+    }
     .list-group a {
         text-align: left;
     }

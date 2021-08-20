@@ -7,14 +7,14 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="~/assets/images/indonesiaku.png" alt="First slide">
+      <img class="d-block w-100" src="~/assets/images/merdeka.jpg" alt="First slide">
             <div class="carousel-caption d-md-block">
-                <h1 class="display-4">Elektronik <span>Pengaduan</span> Masyarakat Inspektorat  <span>Padang Lawas</span></h1>
-                <p><button class="btn btn-primary btn-lg mt-4" @click="toRegistrasiSection">LAPOR SEKARANG</button></p>
+                <!-- <h1 class="display-4">Elektronik <span>Pengaduan</span> Masyarakat Inspektorat  <span>Padang Lawas</span></h1> -->
+                <!-- <p><button class="btn btn-primary btn-lg mt-4" @click="toRegistrasiSection">LAPOR SEKARANG</button></p> -->
             </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="~/assets/images/depan kantor.png" alt="Second slide">
+      <img class="d-block w-100" src="~/assets/images/indonesiaku.png" alt="Second slide">
             <div class="carousel-caption d-md-block">
                 <h1 class="display-4">Elektronik <span>Pengaduan</span> Masyarakat Inspektorat  <span>Padang Lawas</span></h1>
                 <p><button class="btn btn-primary btn-lg mt-4" @click="toRegistrasiSection">LAPOR SEKARANG</button></p>

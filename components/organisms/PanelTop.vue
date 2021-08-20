@@ -13,7 +13,7 @@ export default {
 <style>
     .running {
         margin: 60px 0px 0px 0px;
-        background-color: rgba(46, 44, 44, 0.7);
+        background-color: chartreuse;
         height: 20px;
     }
     .running-text {

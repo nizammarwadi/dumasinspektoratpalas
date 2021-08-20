@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="text-center">
-            <h2>STRUKTUR INSPEKTORAT PALAS</h2>
+            <h2>STRUKTUR ORGANISASI INSPEKTORAT PEMKAB. PADANG LAWAS</h2>
         </div>
         <div class="row image-top">
             <div class="col">
@@ -10,12 +10,12 @@
                 <p>INSPEKTUR</p>
                 
             </div>
-            <div class="col">
+            <!-- <div class="col">
                 <img class="image_team-top" src="~/assets/images/Mukhlis Arif Harahap, M.Si (Sekretaris).jpeg" style="width: 270px; height: 340px;" alt="">
                 <h6> Mukhlis Arif Harahap, SE, M.Si</h6>
                 <p>SEKRETARIS</p>
 
-            </div>
+            </div> -->
         </div>
         <div class="image-item row image-bottom">
             <div class="col">
