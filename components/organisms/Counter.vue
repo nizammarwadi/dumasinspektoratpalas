@@ -23,7 +23,7 @@
 				<div class="col-lg-3 col-sm-6">
 					<div class="counter appear-animation animated fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="900">
 						<i class="fa fa-clock-o"></i>
-						<strong data-to="29" data-append="+">+0</strong>
+						<strong data-to="29" data-append="+">+1</strong>
 						<label>Pengaduan Belum Diproses</label>
 						<p class="text-color-primary mb-5">Total Aduan Belum Diproses
 						</p>
@@ -35,7 +35,7 @@
 				<div class="col-lg-3 col-sm-6">
 					<div class="counter appear-animation animated fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="1200">
 						<i class="fa fa-check-square-o"></i>
-						<strong data-to="19" data-append="+">+0</strong>
+						<strong data-to="19" data-append="+">+1</strong>
 						<label>Pengaduan Selesai</label>
 						<p class="text-color-primary mb-5">Total Aduan Selesai
 						</p>
